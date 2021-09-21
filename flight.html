@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+padding:0;
+margin:0;
+}
+body{
+	background-image:url(qq.jpg);
+	background-size:cover;
+	background-position:center;
+}
+.radio-btn{
+margin:0 20px;
+}
+.radio-btn .btn
+{
+margin :20px 10px 20px 0;
+box-shadow:none;
+}
+.radio-btn .btn:after
+{
+content:'';
+height:15px;
+width:15px;
+top:-2px;
+left:-1px;
+background-color:white;
+pasition:relative;
+displya:inline-block;
+border:3pxsolid white;
+visibility:visible;
+border-redius:50%
+}
+.register{
+	width:170px;
+	top:20%;
+	left:20%;
+	position:absolute;
+	color:white;
+	tranform:translate(-50%, -50%);
+}
+.register h1{
+font-size:25px;
+text-align:center;
+margin:30px 0;
+}
+.register p{
+font-size:20px;
+margin:15px;
+}
+.register input{
+font-size:16px;
+width:100%;
+padding:10px 10px;
+border:0;
+outline:none;
+border-radius:5px;
+}
+
+.register button{
+margin-top:20px;
+font-size:13px;
+font-weight:bold;
+maergin:20px 0;
+padding:8px 8px;
+width:60%;
+border-radius:5px;
+}
+
+</style>
+</head>
+<body>
+<center>
+<h1>Book Ticket</h1>
+<div class"booking-form-box">
+<div class="radio-btn">
+<input type="radio" class="btn" name="check" checked="checked"><span>Rountrip</span>
+<input type="radio" class="btn" name="check"><span>One way</span>
+<input type="radio" class="btn" name="check"><span>Multy-city</span>
+</div></center>
+<div class="register">
+
+	<p>Flying-Form</p>
+	<form action="#" method="post">
+	<input type="text" name="from" placeholder="city or airport">
+	<p>Flying To</p>
+	<input type="text" name="to" placeholder="city or airport">
+	<p>Departing Date</p>
+	<input type="date"  name="date" placeholder="mm/dd/yyyy">
+	<p>Returning Date</p>
+	<input type="date" name="date" placeholder="mm/dd/yyyy">
+	<a href="index.html"><button type="button" class="btn">Book Ticket</button></a>
+	</div>
+	</form>
+	</div>
+</body>
+</html>

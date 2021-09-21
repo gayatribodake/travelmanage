@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+padding:0;
+margin:0;
+}
+
+body{
+ background:url(register.jpg);
+ background-size:cover;
+}
+.register-form{
+width:170px;
+top:20%;
+left:20%;
+tranform:translate(-50%, -50%);
+position:absolute;
+color:white;
+}
+.register-form h1{
+font-size:25px;
+text-align:center;
+margin:30px 0;
+}
+.register-form p{
+font-size:20px;
+margin:15px;
+}
+.register-form input{
+font-size:16px;
+width:100%;
+padding:10px 10px;
+border:0;
+outline:none;
+border-radius:5px;
+}
+.log button{
+margin-top:20px;
+font-size:13px;
+font-weight:bold;
+maergin:20px 0;
+padding:8px 8px;
+width:40%;
+border-radius:5px;
+}
+</style>
+<script type="text/javascript">
+function validate(username,number){
+	var user=username;
+	var num=number;
+	if(user==""){
+		document.getelementById("msg").innerHTML="<font color='red'>enter user</font>";
+	}else if(num==""){
+		document.getelementById("msg").innerHTML="<font color='red'>enter user</font>";
+	}else if(user=="admin" && num=="admin"){
+		open("login.html");
+	}else{
+		document.getelementById("msg").innerHTML="<font color='red'>incorrect username/num</font>";
+	}
+}
+</script>
+</head>
+<body>
+<div class="register-form">
+	<h1>Register-Form</h1>
+	<form action="#" method="post">
+	<p>Username :</p>
+	<input type="text" name="user" placeholder="user name">
+	<p>Mobile No. :</p>
+	<input type="number" name="num" placeholder="enter number">
+	<p>EmailId :</p>
+	<input type="email" name="email" placeholder="enter mailid">
+	<p>UserId :</p>
+	<input type="text" name="user" placeholder="user id">
+	<p>Password</p>
+	<input type="password" name="password" placeholder="password">
+	<div class="log">
+	<a href="login.html"><button type="button" onlclick="validate(user.value,num.value)">Register</button></a>
+	<a href="index.html"><button type="button">Home</button></a></div>
+	</form>
+</body>
+</html>
